@@ -81,4 +81,5 @@ if hard_quiz == "b" or "c" or "d" or "2467" or "2896" or "2479":
   print("Your exp is now" + str(xp))
 
 print("Thank you for using our repo! #alpha")
+print("DO NOT DEL OR ELSE")
 input("Press Any Button to exit")
