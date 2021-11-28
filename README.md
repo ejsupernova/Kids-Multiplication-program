@@ -1,9 +1,9 @@
 # Kids-Multiplication-program
-GIVE TO KID
-
+PG13+
 # The Overview
 
-This program is a children multiplication learning program and yea
+This program is a children multiplication learning program and is for kids in grade
+4/ 8 yr olds
 
 # Features
 
