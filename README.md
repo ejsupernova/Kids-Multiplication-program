@@ -15,7 +15,7 @@ This program is a children multiplication learning program and is for kids in gr
 
 # Other
 
-.Cookie Baking
-.Tell The Teacher
-.Call The Police
+.Cookie Baking  
+.Tell The Teacher  
+.Call The Police  
 .Eat Poop
