@@ -13,4 +13,9 @@ This program is a children multiplication learning program and is for kids in gr
 .Fun  
 .Easy To Learn  
 
-# Thats It
+# Other
+
+.Cookie Baking
+.Tell The Teacher
+.Call The Police
+.Eat Poop
