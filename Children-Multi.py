@@ -49,14 +49,14 @@ print("18      13 ")
 print("")
 
 Test = input()
-if Test == "a" or "18":
+if Test == "a" or Test == "18":
     print("Congratulations You Are Correct!")
     print("You Will Be Awarded 50exp")
     xp = xp + 50
     print("Your EXP is  " + str(xp))
 else:
     print("Incorrect!")
-    print("Your exp is now" + xp)
+    print("Your exp is now" + str(xp))
 input("Type anything to procced")
 if hard_mode == True:
     print("Welcome To The hard mode bonus quistion!")
@@ -69,16 +69,6 @@ if hard_mode == True:
     print("2896    2479")
     hard_quiz1 = input()
 
-if hard_quiz == "a" or "2583":
-        print("congratulations you are correct!")
-        print("You will now be given 150exp")
-        xp = xp + 150
-        print("Your xp is now" + str(xp))
-if hard_quiz == "b" or "c" or "d" or "2467" or "2896" or "2479":
-  print("You are incorrect")
-  print("but we will give you an extra 25exp!")
-  xp = xp + 25
-  print("Your exp is now" + str(xp))
 
 print("Thank you for using our repo! #alpha")
 print("DO NOT DEL OR ELSE")
