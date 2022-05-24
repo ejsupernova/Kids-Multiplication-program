@@ -67,7 +67,24 @@ Test = input()
 if Test == "a" or "14":
     print("Congratulations You Are Correct!")
     print("You Will Be Awarded 100exp!")
-    xp = xp + 50
+    xp = xp + 100
+    print("Your EXP is  " + str(xp))
+else:
+    print("Incorrect!")
+    print("Keep Going!")
+    print("Your exp is now" + xp)
+print("!!Bonus!!")
+print("what is 10 X 589347542?")
+print("    (a)                (b)")
+print(" 589347690          5893475420 ")
+print("")
+
+Test = input()
+if Test == "a" or "14":
+    print("Congratulations You Are Correct!")
+    print("You Will Be Awarded 110exp!")
+    print("Nice job on the bonus!")
+    xp = xp + 110
     print("Your EXP is  " + str(xp))
 else:
     print("Incorrect!")
@@ -75,10 +92,8 @@ else:
     print("Your exp is now" + xp)
 
 
-input("Type anything to procced")
 if hard_mode == True:
     print("Sorry Hard Mode Is Disabled For Now!")
 
-print("Thank you for using our repo! #alpha")
-print("DO NOT DEL OR ELSE")
+print("Thank you for using our 3rd party repo! #alpha")
 input("Press Any Button to exit ")
