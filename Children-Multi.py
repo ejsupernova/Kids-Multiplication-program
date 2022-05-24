@@ -20,7 +20,7 @@ if int(age) > 20:
    bool(hard_mode_proxy)
    hard_mode = hard_mode_proxy
    print("hard mode = " + hard_mode)
-   
+#-----------------------------------------
 print("What is 10/2? ")
 print("(a)     (b)")
 print("9      5 ")
@@ -41,7 +41,7 @@ else:
     print("it so easy!")
     print("")
     input("Type anything to proceed: ")
-
+#-------------------------------------------
 
 print("what is 9/3?")
 print("(a)     (b)")
@@ -57,7 +57,7 @@ if Test == "b" or "3":
 else:
     print("Incorrect!")
     print("Your exp is now" + xp)
-
+#----------------------------------------------
 print("what is 28/2?")
 print("(a)     (b)")
 print(" 14       21 ")
@@ -89,6 +89,23 @@ if Test == "a" or "14":
 else:
     print("Incorrect!")
     print("Keep Trying!")
+    print("Your exp is now" + xp)
+#--------------------------------------
+print("what is 100/10")
+print("    (a)        (b)")
+print("    12          10 ")
+print("")
+
+Test = input()
+if Test == "b" or "10":
+    print("Congratulations You Are Correct!")
+    print("You Will Be Awarded 50exp!")
+    print("Wow nice job!")
+    xp = xp + 50
+    print("Your EXP is  " + str(xp))
+else:
+    print("Incorrect!")
+    print("....")
     print("Your exp is now" + xp)
 
 
