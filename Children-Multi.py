@@ -88,7 +88,7 @@ if Test == "a" or "14":
     print("Your EXP is  " + str(xp))
 else:
     print("Incorrect!")
-    print("Keep Going!")
+    print("Keep Trying!")
     print("Your exp is now" + xp)
 
 
