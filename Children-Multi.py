@@ -57,10 +57,28 @@ if Test == "b" or "3":
 else:
     print("Incorrect!")
     print("Your exp is now" + xp)
+
+print("what is 28/2?")
+print("(a)     (b)")
+print(" 14       21 ")
+print("")
+
+Test = input()
+if Test == "a" or "14":
+    print("Congratulations You Are Correct!")
+    print("You Will Be Awarded 100exp!")
+    xp = xp + 50
+    print("Your EXP is  " + str(xp))
+else:
+    print("Incorrect!")
+    print("Keep Going!")
+    print("Your exp is now" + xp)
+
+
 input("Type anything to procced")
 if hard_mode == True:
     print("Sorry Hard Mode Is Disabled For Now!")
 
 print("Thank you for using our repo! #alpha")
 print("DO NOT DEL OR ELSE")
-input("Press Any Button to exit")
+input("Press Any Button to exit ")
