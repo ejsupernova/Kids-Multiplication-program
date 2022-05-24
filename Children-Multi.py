@@ -91,21 +91,21 @@ else:
     print("Keep Trying!")
     print("Your exp is now" + xp)
 #--------------------------------------
-print("what is 10 X 589347542?")
-print("    (a)                (b)")
-print(" 589347690          5893475420 ")
+print("what is 100/10")
+print("    (a)        (b)")
+print("    12          10 ")
 print("")
 
 Test = input()
-if Test == "a" or "14":
+if Test == "b" or "10":
     print("Congratulations You Are Correct!")
-    print("You Will Be Awarded 110exp!")
-    print("Nice job on the bonus!")
-    xp = xp + 110
+    print("You Will Be Awarded 50exp!")
+    print("Wow nice job!")
+    xp = xp + 50
     print("Your EXP is  " + str(xp))
 else:
     print("Incorrect!")
-    print("Keep Trying!")
+    print("....")
     print("Your exp is now" + xp)
 
 
