@@ -60,7 +60,7 @@ else:
 #----------------------------------------------
 print("what is 28/2?")
 print("(a)     (b)")
-print(" 14       21 ")
+print(" 14       24 ")
 print("")
 
 Test = input()
