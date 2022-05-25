@@ -73,6 +73,7 @@ else:
     print("Incorrect!")
     print("Keep Going!")
     print("Your exp is now" + xp)
+    #-----------------------------------------------
 print("!!Bonus!!")
 print("what is 10 X 589347542?")
 print("    (a)                (b)")
@@ -106,6 +107,40 @@ if Test == "b" or "10":
 else:
     print("Incorrect!")
     print("....")
+    print("Your exp is now" + xp)
+#--------------------------------------
+print("what is 48/2")
+print("    (a)        (b)")
+print("    36          24 ")
+print("")
+
+Test = input()
+if Test == "b" or "24":
+    print("Congratulations You Are Correct!")
+    print("You Will Be Awarded 45exp!")
+    print("Wow very good job!")
+    xp = xp + 45
+    print("Your EXP is  " + str(xp))
+else:
+    print("Incorrect!")
+    print("You can do better")
+    print("Your exp is now" + xp)
+#--------------------------------------
+print("what is 64/2")
+print("    (a)        (b)")
+print("     32         45 ")
+print("")
+
+Test = input()
+if Test == "a" or "32":
+    print("Congratulations You Are Correct!")
+    print("You Will Be Awarded 50exp!")
+    print("Wow very good job!")
+    xp = xp + 50
+    print("Your EXP is  " + str(xp))
+else:
+    print("Incorrect!")
+    print("You can do better")
     print("Your exp is now" + xp)
 
 
