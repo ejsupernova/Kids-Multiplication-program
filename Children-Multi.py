@@ -140,7 +140,24 @@ if Test == "a" or "32":
     print("Your EXP is  " + str(xp))
 else:
     print("Incorrect!")
-    print("You can do better")
+    print("Ok")
+    print("Your exp is now" + xp)
+#--------------------------------------
+print("what is 12/4")
+print("    (a)        (b)")
+print("     2         3 ")
+print("")
+
+Test = input()
+if Test == "b" or "3":
+    print("Congratulations You Are Correct!")
+    print("You Will Be Awarded 65exp!")
+    print("Nice")
+    xp = xp + 65
+    print("Your EXP is  " + str(xp))
+else:
+    print("Incorrect!")
+    print("R.I.P")
     print("Your exp is now" + xp)
 
 
