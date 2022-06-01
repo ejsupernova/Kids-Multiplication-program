@@ -1,7 +1,7 @@
 import sys
 import os
+from time import sleep
 import tkinter as tk
-import time
 hard_mode = False
 xp = 0
 print("______________________________________")
