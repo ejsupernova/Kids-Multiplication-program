@@ -1,4 +1,5 @@
 import sys
+from time import sleep
 hard_mode = False
 xp = 0
 print("______________________________________")
@@ -165,4 +166,10 @@ if hard_mode == True:
     print("Sorry Hard Mode Is Disabled For Now!")
 
 print("Thank you for using our 3rd party repo! #alpha")
-input("Press Any Button to exit ")
+print("Exiting...")
+sleep(1)
+print("Exiting..")
+sleep(1)
+print("Exiting.")
+sleep(0.2)
+exit()
