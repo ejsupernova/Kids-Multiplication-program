@@ -20,7 +20,7 @@ try:
     age + 1
     age - 1
 except:
-    print("You used an invalid age setting to default age")
+    print("You used an invalid age, setting to default age")
     age = int(12)
         
 
