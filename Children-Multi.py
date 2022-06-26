@@ -1,3 +1,5 @@
+from ast import excepthandler
+from cgitb import handler
 import sys
 import os
 from time import sleep
@@ -14,6 +16,13 @@ print("______________________________________")
 
 name = input("Please Type Your Name ")
 age = input("Please Type your age ")
+try:
+    age + 1
+    age - 1
+except:
+    print("You used an invalid age setting to default age")
+    age = int(12)
+        
 
 if int(age) > 20:
    print("Welcome To The Parent Control Panel!")
@@ -167,6 +176,7 @@ else:
 if hard_mode == True:
     print("Sorry Hard Mode Is Disabled For Now!")
 
+print("Congrats your total xp is " + str(xp) + " Wow!")
 print("Thank you for using our 3rd party repo! #alpha")
 print("Exiting...")
 sleep(1)
