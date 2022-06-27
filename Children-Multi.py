@@ -1,5 +1,5 @@
-from ast import excepthandler
-from cgitb import handler
+
+
 import sys
 import os
 from time import sleep
@@ -22,6 +22,7 @@ try:
 except:
     print("You used an invalid age, setting to default age")
     age = int(12)
+    print("Your age is now set to " + str(age))
         
 
 if int(age) > 20:
@@ -157,11 +158,11 @@ else:
 #--------------------------------------
 print("what is 12/4")
 print("    (a)        (b)")
-print("     2         3 ")
+print("     2         4 ")
 print("")
 
 Test = input()
-if Test == "b" or "3":
+if Test == "b" or "4":
     print("Congratulations You Are Correct!")
     print("You Will Be Awarded 65exp!")
     print("Nice")
@@ -172,11 +173,30 @@ else:
     print("R.I.P")
     print("Your exp is now" + xp)
 
+    #--------------------------------------
+print("what is 36/2")
+print("    (a)        (b)")
+print("     18         14 ")
+print("")
 
+Test = input()
+if Test == "a" or "18":
+    print("Congratulations You Are Correct!")
+    print("You Will Be Awarded 50exp!")
+    print("Your a master of math!")
+    xp = xp + 69
+    print("Your EXP is  " + str(xp))
 if hard_mode == True:
     print("Sorry Hard Mode Is Disabled For Now!")
 
 print("Congrats your total xp is " + str(xp) + " Wow!")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
 print("Thank you for using our 3rd party repo! #alpha")
 print("Exiting...")
 sleep(1)
