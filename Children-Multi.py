@@ -3,6 +3,7 @@
 import sys
 import os
 import random
+from time import sleep
 hard_mode = False
 xp = 0
 print("______________________________________")
