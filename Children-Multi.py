@@ -1,4 +1,9 @@
+
+
 import sys
+import os
+from time import sleep
+import tkinter as tk
 hard_mode = False
 xp = 0
 print("______________________________________")
@@ -11,6 +16,14 @@ print("______________________________________")
 
 name = input("Please Type Your Name ")
 age = input("Please Type your age ")
+try:
+    age + 1
+    age - 1
+except:
+    print("You used an invalid age, setting to default age")
+    age = int(12)
+    print("Your age is now set to " + str(age))
+        
 
 if int(age) > 20:
    print("Welcome To The Parent Control Panel!")
@@ -60,7 +73,7 @@ else:
 #----------------------------------------------
 print("what is 28/2?")
 print("(a)     (b)")
-print(" 14       21 ")
+print(" 14       24 ")
 print("")
 
 Test = input()
@@ -73,6 +86,7 @@ else:
     print("Incorrect!")
     print("Keep Going!")
     print("Your exp is now" + xp)
+    #-----------------------------------------------
 print("!!Bonus!!")
 print("what is 10 X 589347542?")
 print("    (a)                (b)")
@@ -107,10 +121,87 @@ else:
     print("Incorrect!")
     print("....")
     print("Your exp is now" + xp)
+#--------------------------------------
+print("what is 48/2")
+print("    (a)        (b)")
+print("    36          24 ")
+print("")
 
+Test = input()
+if Test == "b" or "24":
+    print("Congratulations You Are Correct!")
+    print("You Will Be Awarded 45exp!")
+    print("Wow very good job!")
+    xp = xp + 45
+    print("Your EXP is  " + str(xp))
+else:
+    print("Incorrect!")
+    print("You can do better")
+    print("Your exp is now" + xp)
+#--------------------------------------
+print("what is 64/2")
+print("    (a)        (b)")
+print("     32         45 ")
+print("")
 
+Test = input()
+if Test == "a" or "32":
+    print("Congratulations You Are Correct!")
+    print("You Will Be Awarded 50exp!")
+    print("Wow very good job!")
+    xp = xp + 50
+    print("Your EXP is  " + str(xp))
+else:
+    print("Incorrect!")
+    print("Ok")
+    print("Your exp is now" + xp)
+#--------------------------------------
+print("what is 12/4")
+print("    (a)        (b)")
+print("     2         4 ")
+print("")
+
+Test = input()
+if Test == "b" or "4":
+    print("Congratulations You Are Correct!")
+    print("You Will Be Awarded 65exp!")
+    print("Nice")
+    xp = xp + 65
+    print("Your EXP is  " + str(xp))
+else:
+    print("Incorrect!")
+    print("R.I.P")
+    print("Your exp is now" + xp)
+
+    #--------------------------------------
+print("what is 36/2")
+print("    (a)        (b)")
+print("     18         14 ")
+print("")
+
+Test = input()
+if Test == "a" or "18":
+    print("Congratulations You Are Correct!")
+    print("You Will Be Awarded 50exp!")
+    print("Your a master of math!")
+    xp = xp + 69
+    print("Your EXP is  " + str(xp))
 if hard_mode == True:
     print("Sorry Hard Mode Is Disabled For Now!")
 
+print("Congrats your total xp is " + str(xp) + " Wow!")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
 print("Thank you for using our 3rd party repo! #alpha")
-input("Press Any Button to exit ")
+print("Exiting...")
+sleep(1)
+print("Exiting..")
+sleep(1)
+print("Exiting.")
+sleep(0.2)
+exit()
