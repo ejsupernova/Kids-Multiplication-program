@@ -1,7 +1,8 @@
+
+
 import sys
 import os
 import random
-from turtle import clear
 hard_mode = False
 xp = 0
 print("______________________________________")
@@ -14,6 +15,14 @@ print("______________________________________")
 
 name = input("Please Type Your Name ")
 age = input("Please Type your age ")
+try:
+    age + 1
+    age - 1
+except:
+    print("You used an invalid age, setting to default age")
+    age = int(12)
+    print("Your age is now set to " + str(age))
+        
 
 if int(age) > 20:
    print("Welcome To The Parent Control Panel!")
@@ -26,6 +35,7 @@ if int(age) > 20:
 #-----------------------------------------
 loop = True
 while loop == True:
+
 
     multi1 = random.randint(4,20)
     multi2 = random.randint(4,20)
@@ -41,10 +51,20 @@ while loop == True:
     else:
         print("Incorrect!")
         print("You have " + str(xp) + " XP")
-    clear()
 
-
-print("Sorry Hard Mode Is Disabled For Now!")
-
+print("Congrats your total xp is " + str(xp) + " Wow!")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
 print("Thank you for using our 3rd party repo! #alpha")
-input("Press Any Button to exit ")
+print("Exiting...")
+sleep(1)
+print("Exiting..")
+sleep(1)
+print("Exiting.")
+sleep(0.2)
+exit()
