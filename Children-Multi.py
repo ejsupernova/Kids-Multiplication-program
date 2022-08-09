@@ -17,13 +17,31 @@ print("______________________________________")
 name = input("Please Type Your Name ")
 age = input("Please Type your age ")
 try:
-    age + 1
-    age - 1
+    print(int(age))
 except:
-    print("You used an invalid age, setting to default age")
-    age = int(12)
-    print("Your age is now set to " + str(age))
-        
+    print("Please Type a valid age")
+    sys.exit()
+print("Welcome " + name + " you are " + age + " years old")
+
+def loop():
+    loop = True
+    while loop:
+        multi1 = random.randint(2,20)
+        multi2 = random.randint(2,20)
+        print ("What is " + str(multi1) + " x " + str(multi2) + "?")
+        answer = input("Answer: ")
+        sum_answer = multi1 * multi2
+        print("The answer was " + str(sum_answer))
+        print("You answered " + answer)
+        if answer == str(sum_answer):
+            print("Correct!")
+            xp = xp + 50
+            print("You have " + str(xp) + " XP")
+        else:
+            print("Incorrect!")
+            print("You have " + str(xp) + " XP")
+     
+
 
 if int(age) > 20:
    print("Welcome To The Parent Control Panel!")
@@ -34,24 +52,8 @@ if int(age) > 20:
    hard_mode = hard_mode_proxy
    print("hard mode = " + hard_mode)
 #-----------------------------------------
-loop = True
-while loop == True:
 
-
-    multi1 = random.randint(4,20)
-    multi2 = random.randint(4,20)
-    print ("What is " + str(multi1) + " x " + str(multi2) + "?")
-    answer = input("Answer: ")
-    sum_answer = multi1 * multi2
-    print("The answer was " + str(sum_answer))
-    print("You answered " + answer)
-    if answer == str(sum_answer):
-        print("Correct!")
-        xp = xp + 50
-        print("You have " + str(xp) + " XP")
-    else:
-        print("Incorrect!")
-        print("You have " + str(xp) + " XP")
+loop()
 
 print("Congrats your total xp is " + str(xp) + " Wow!")
 print("")
