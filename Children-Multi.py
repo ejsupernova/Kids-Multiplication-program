@@ -24,10 +24,11 @@ except:
 print("Welcome " + name + " you are " + age + " years old")
 
 def loop():
+    xp = 0
     loop = True
     while loop:
-        multi1 = random.randint(2,20)
-        multi2 = random.randint(2,20)
+        multi1 = random.randint(2,12)
+        multi2 = random.randint(2,12)
         print ("What is " + str(multi1) + " x " + str(multi2) + "?")
         answer = input("Answer: ")
         sum_answer = multi1 * multi2
