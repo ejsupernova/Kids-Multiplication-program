@@ -1,13 +1,25 @@
-
-
 import sys
 import os
 import random
 from time import sleep
+
+class bcolors:
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    ENDC = '\033[0m'
+
+    def disable(self):
+        self.OKBLUE = ''
+        self.OKGREEN = ''
+        self.WARNING = ''
+        self.ENDC = ''
+        
+
 hard_mode = False
 xp = 0
 print("______________________________________")
-print("             Epic Quiz Game!")
+print(f"             {bcolors.WARNING}Epic Quiz Game!{bcolors.ENDC}")
 print("                 Rules!")
 print("")
 print("1.Do not use caps!")
@@ -22,25 +34,42 @@ except:
     print("Please Type a valid age")
     sys.exit()
 print("Welcome " + name + " you are " + age + " years old")
+print("to exit at anytime, please type Q as an answer")
 
 def loop():
     xp = 0
+    hits = 0
     loop = True
     while loop:
         multi1 = random.randint(2,12)
         multi2 = random.randint(2,12)
-        print ("What is " + str(multi1) + " x " + str(multi2) + "?")
+        print (f"{bcolors.OKBLUE}What is " + str(multi1) + " x " + str(multi2) + f"?{bcolors.ENDC}")
         answer = input("Answer: ")
         sum_answer = multi1 * multi2
-        print("The answer was " + str(sum_answer))
-        print("You answered " + answer)
-        if answer == str(sum_answer):
-            print("Correct!")
-            xp = xp + 50
-            print("You have " + str(xp) + " XP")
+        
+        # check if answer is Q, then print final results and exit the loop.
+        if answer.lower().strip() != 'q':                
+            if answer == str(sum_answer):
+                print(f"{bcolors.OKGREEN}Correct!{bcolors.ENDC}")
+                print(f"The answer was {bcolors.OKGREEN}{str(sum_answer)}{bcolors.ENDC}")
+                print(f"You answered {bcolors.OKGREEN}{str(answer)}{bcolors.ENDC}")            
+                xp = xp + 50
+                print(f"You have {bcolors.OKGREEN}{str(xp)}{bcolors.ENDC} XP")
+            else:            
+                print(f"{bcolors.WARNING}Incorrect!{bcolors.ENDC}")
+                print(f"The answer was {bcolors.OKGREEN}{str(sum_answer)}{bcolors.ENDC}")
+                print(f"You answered {bcolors.WARNING}{str(answer)}{bcolors.ENDC}")            
+                print(f"You have {bcolors.OKGREEN}{str(xp)}{bcolors.ENDC} XP")            
+                
+                hits = hits + 1            
+                # you may uncomment the below line if you want to show the number of wrong answers to your child after each wrong answer.
+                # print(f"You had {bcolors.WARNING}{str(hits)}{bcolors.ENDC} wrong answers")
         else:
-            print("Incorrect!")
-            print("You have " + str(xp) + " XP")
+            # exit
+            print("")
+            print(f"You have {bcolors.OKGREEN}{str(xp)}{bcolors.ENDC} XP")            
+            print(f"You had {bcolors.WARNING}{str(hits)}{bcolors.ENDC} wrong answers")
+            loop = False
      
 
 
@@ -56,12 +85,6 @@ if int(age) > 20:
 
 loop()
 
-print("Congrats your total xp is " + str(xp) + " Wow!")
-print("")
-print("")
-print("")
-print("")
-print("")
 print("")
 print("")
 print("Thank you for using our 3rd party repo! #alpha")
